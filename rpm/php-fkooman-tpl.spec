@@ -18,6 +18,7 @@ BuildArch:  noarch
 Provides:   php-composer(%{composer_vendor}/%{composer_project}) = %{version}
 
 Requires:   php(language) >= 5.3.3
+Requires:   php-spl
 Requires:   php-standard
 
 %description
