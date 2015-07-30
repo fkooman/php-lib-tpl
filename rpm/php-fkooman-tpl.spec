@@ -5,7 +5,7 @@
 %global github_name      php-lib-tpl
 
 Name:       php-%{composer_vendor}-%{composer_project}
-Version:    1.0.0
+Version:    1.0.1
 Release:    1%{?dist}
 Summary:    Simple Template Abstraction Library
 
@@ -44,5 +44,8 @@ cp -pr src/* ${RPM_BUILD_ROOT}%{_datadir}/php
 %license COPYING
 
 %changelog
+* Thu Jul 30 2015 François Kooman <fkooman@tuxed.net> - 1.0.1-1
+- update to 1.0.1
+
 * Thu Jul 30 2015 François Kooman <fkooman@tuxed.net> - 1.0.0-1
 - update to 1.0.0
