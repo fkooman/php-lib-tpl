@@ -41,5 +41,5 @@ cp -pr src/* ${RPM_BUILD_ROOT}%{_datadir}/php
 %license COPYING
 
 %changelog
-* Tue Jul 21 2015 François Kooman <fkooman@tuxed.net> - 1.0.0-1
+* Thu Jul 30 2015 François Kooman <fkooman@tuxed.net> - 1.0.0-1
 - update to 1.0.0
