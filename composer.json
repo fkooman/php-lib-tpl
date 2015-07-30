@@ -1,0 +1,20 @@
+{
+    "authors": [
+        {
+            "email": "fkooman@tuxed.net",
+            "name": "Fran\u00e7ois Kooman"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "fkooman\\Tpl\\": "src/"
+        }
+    },
+    "description": "Simple Template Abstraction Library",
+    "license": "Apache-2.0",
+    "name": "fkooman/tpl",
+    "require": {
+        "php": ">= 5.3.3",
+        "twig/twig": "^1.18"
+    }
+}
