@@ -21,6 +21,9 @@ Requires:   php(language) >= 5.3.3
 Requires:   php-spl
 Requires:   php-standard
 
+Requires:   php-pear(pear.twig-project.org/Twig) >= 1.18
+Requires:   php-pear(pear.twig-project.org/Twig) < 2.0
+
 %description
 Simple Template Abstraction Library.
 
