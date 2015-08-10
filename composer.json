@@ -14,8 +14,6 @@
     "license": "Apache-2.0",
     "name": "fkooman/tpl",
     "require": {
-        "ext-spl": "*",
-        "php": ">= 5.3.3",
-        "twig/twig": "^1.18"
+        "php": ">= 5.3.3"
     }
 }

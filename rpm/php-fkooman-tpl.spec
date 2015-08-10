@@ -5,7 +5,7 @@
 %global github_name      php-lib-tpl
 
 Name:       php-%{composer_vendor}-%{composer_project}
-Version:    1.0.1
+Version:    2.0.0
 Release:    1%{?dist}
 Summary:    Simple Template Abstraction Library
 
@@ -18,11 +18,7 @@ BuildArch:  noarch
 Provides:   php-composer(%{composer_vendor}/%{composer_project}) = %{version}
 
 Requires:   php(language) >= 5.3.3
-Requires:   php-spl
 Requires:   php-standard
-
-Requires:   php-pear(pear.twig-project.org/Twig) >= 1.18
-Requires:   php-pear(pear.twig-project.org/Twig) < 2.0
 
 %description
 Simple Template Abstraction Library.
@@ -44,6 +40,9 @@ cp -pr src/* ${RPM_BUILD_ROOT}%{_datadir}/php
 %license COPYING
 
 %changelog
+* Mon Aug 10 2015 François Kooman <fkooman@tuxed.net> - 2.0.0-1
+- update to 2.0.0
+
 * Thu Jul 30 2015 François Kooman <fkooman@tuxed.net> - 1.0.1-1
 - update to 1.0.1
 
