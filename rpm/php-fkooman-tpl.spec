@@ -6,13 +6,15 @@
 
 Name:       php-%{composer_vendor}-%{composer_project}
 Version:    2.0.0
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    Simple Template Abstraction Library
 
 Group:      System Environment/Libraries
 License:    ASL 2.0
 URL:        https://github.com/%{github_owner}/%{github_name}
 Source0:    https://github.com/%{github_owner}/%{github_name}/archive/%{version}.tar.gz
+Source1:    %{name}-autoload.php
+
 BuildArch:  noarch
 
 Provides:   php-composer(%{composer_vendor}/%{composer_project}) = %{version}
@@ -25,6 +27,7 @@ Simple Template Abstraction Library.
 
 %prep
 %setup -qn %{github_name}-%{version}
+cp %{SOURCE1} src/%{composer_vendor}/Tpl/autoload.php
 
 %build
 
@@ -40,6 +43,9 @@ cp -pr src/* ${RPM_BUILD_ROOT}%{_datadir}/php
 %license COPYING
 
 %changelog
+* Thu Sep 03 2015 François Kooman <fkooman@tuxed.net> - 2.0.0-2
+- add autoloader
+
 * Mon Aug 10 2015 François Kooman <fkooman@tuxed.net> - 2.0.0-1
 - update to 2.0.0
 
