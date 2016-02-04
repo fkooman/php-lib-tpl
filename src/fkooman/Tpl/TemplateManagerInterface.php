@@ -30,6 +30,16 @@ interface TemplateManagerInterface
     public function setDefault(array $templateVariables);
 
     /**
+     * Add default template variables that are always used by the render
+     * method, they will be overriden by the parameters specified in the render
+     * method.
+     *
+     * @param array $templateVariables the variables to be used in the 
+     *                                 template(s)
+     */
+    public function addDefault(array $templateVariables);
+
+    /**
      * Render the template.
      *
      * @param string $templateName      the name of the template
